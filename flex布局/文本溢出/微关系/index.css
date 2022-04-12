@@ -1,0 +1,177 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.relation {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 15px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background: #fff;
+}
+
+/*头部微关系的样式*/
+.relation .title{
+	/* width: 300px; */
+	padding-top: 10px;
+	padding-left: 16px;
+	padding-bottom: 9px;
+		
+	/*字体的设置*/
+	font-size: 14px;
+	font-weight: 500px;
+	color: #333333;
+	line-height: 20px;
+	
+	
+}
+/*加入下边框*/
+.bottom-split{
+	border-bottom: 1px #F2F2F5 solid;
+}
+
+/*container部分的follow部分*/
+.relation .relation-container .follow{
+	width: 268px;
+	margin-left: 16px;
+	margin-right: 16px;
+	
+	/* border: 1px #333333 solid; */
+	border-bottom: 1px #F2F2F5 solid;
+}
+
+/*container部分她的关注*/
+.relation .relation-container .follow .title{
+	padding-top: 11px;
+	margin-bottom: 9px;
+	
+	/* border: 1px #333333 solid; */
+	position: relative;
+	left: -17px;
+	
+	font-size: 14px;
+	font-weight: 500px;
+	color: #333333;
+	line-height: 19px;
+}
+
+/*设置标签li的排列方式*/
+.follow-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.relation .item {
+  width: 50px;
+  flex: none;
+  text-align: center;
+}
+
+.relation .item .avatar-tag {
+  width: 50px;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.relation .item .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(./images/avatar.png) no-repeat center/contain;
+}
+.relation .item .tag {
+  position: absolute;
+  bottom: -5px;
+  right: -1px;
+  width: 20px;
+  height: 20px;
+  background: url(./images/vip-circle.png) no-repeat center/contain;
+}
+
+/*对文本超出设置*/
+.relation .item .name{
+	/* 强制不换行 */
+	white-space: nowrap;
+	/* 隐藏超出部分 */
+	overflow: hidden;
+	/* 用省略号代替剩余内容 */
+	text-overflow: ellipsis;
+	
+	margin-bottom: 17px;
+	
+	font-size: 12px;
+	font-weight: 400px;
+	color: #333333;
+	line-height: 16px;
+}
+
+
+/*fans部分*/
+.fans-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.fans-list .item:first-child{
+	margin-left: 16px;
+}
+
+.fans-list .item:last-child{
+	margin-right: 16px;
+}
+
+/*底部的more设置*/
+.more{
+	/* width: 300px; */
+	border-top: 1px #F2F2F5 solid;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 118px;
+	
+	display: flex;
+}
+
+.more .text{
+	margin-right: 4px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #333333;
+	line-height: 16px;
+}
+
+.more .right-icon{
+	width: 4px;
+	height: 7px;
+	margin-top: 4px;
+	background: url(images/arrow-right.png) no-repeat center;
+	background-size: contain;
+}

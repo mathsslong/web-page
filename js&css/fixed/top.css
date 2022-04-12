@@ -1,0 +1,32 @@
+body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  z-index: 100;
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  color: yellowgreen; /*为了方便观看，我们修改MOUNTAIN的颜色*/
+}
+
+.img-box {
+  position: relative;
+}
+
+.top {
+  /*完成top css*/
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+}

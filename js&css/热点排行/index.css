@@ -1,0 +1,31 @@
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+ul li{
+    font-size: 14px;
+    color: #404040;
+}
+
+ul li span{
+    font-size: 14px;
+    color: #f34540;
+}
+
+span.qiansan{
+    font-size: 26px;
+    color: #f34540;
+}
+
+span.normal{
+    font-size: 16px;
+    color: #888888;
+}
+
+h3{
+    font-size: 16px;
+    color: #404040;
+    font-weight: 100px;
+}

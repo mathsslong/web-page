@@ -1,0 +1,40 @@
+/* 列表默认样式清除 */
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  ul {
+    /* 因为文本样式具有继承性，所以我们可以把li公共文本样式提到父元素ul中 */
+    /* 当然，这些文本样式直接写在li上也是可以的 */
+    color: #333333;
+    font-size: 16px;
+    /* 设置边框 */
+    border: 1px solid #a4a4a4;
+    /* 将ul从块状元素变为行内块元素，这样做的话，ul的宽度将不再是body宽度的100% */
+    /* 它的宽度将是里面li的总宽度，即ul的宽度将由内容宽度决定 */
+    display: inline-block;
+  }
+  
+  ul li {
+    /* 
+          display:inline-block可以让一个块元素和行内元素在同一行显示
+          具有想同属性的块元素也可以并排显示
+      */
+    display: inline-block;
+    /* 每个li的宽度不是固定的，是有文字+左右各15px形成的 */
+    padding-left: 15px;
+    padding-right: 15px;
+    /* 给li设置height */
+    height: 60px;
+    /* 给li设置和height等值的line-height，这样可以使li中的单行文字在垂直方向上居中 */
+    line-height: 60px;
+  }
+  
+  /* 利用css的层叠性修改第一项li的样式 */
+  /* ul li.current表示选中ul的后代li中类名为current的元素 */
+  ul li.current {
+    color: #ffffff;
+    background-color: #0091ff;
+  }

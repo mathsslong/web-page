@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.ranking {
+  margin: 0 auto;
+  width: 300px;
+  height: 180px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+/*top部分*/
+.top{
+	padding: 10px 16px;
+	display: flex;
+	
+	border-bottom: 1px #F2F2F5 solid;
+}
+
+.top .item{
+	font-size: 14px;
+	font-weight: 500px;
+	color: #333333;
+	line-height: 20px;
+}
+
+.list{
+	margin-right: 109px;
+}
+
+.top .current{
+	color: #FF830A;
+	margin-right: 5px;
+}
+
+.main{
+	margin: 13px 16px 10px 16px;
+}
+
+.gift{
+	float: left;
+}
+
+.avatar{
+	float: right;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: url(images/banner-head-icon.png) no-repeat center;
+	background-size: contain;
+}
+
+.main .gift .receive{
+	margin-bottom: 7px;
+	display: flex;
+	align-items: center;
+}
+
+.main .gift .receive .content{
+	font-size: 12px;
+	font-weight: 400;
+	color: #333333;
+	line-height: 17px;
+}
+
+.main .gift .receive .count{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333333;
+	line-height: 20px;
+	margin-right: 5px;
+}
+
+
+/*送花的按钮*/
+.main .gift .give{
+	width: 70px;
+	height: 26px;
+	border: 1px #F77C3D solid;
+	border-radius: 2px;
+	background: #FF8140;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.25);
+	
+	/*字体的设置*/
+	font-size: 12px;
+	font-weight: 400px;
+	color: #FFFFFF;
+	line-height: 25px;
+	text-align: center;
+}
+
+.explain{
+	width: 268px;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-bottom: 6px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #808080;
+	line-height: 17px;
+}
+
+
+/*footer部分*/
+.footer{
+	margin-bottom: 17px;
+	margin-left: 16px;
+	margin-right: 16px;
+	
+	display: flex;
+	
+	font-size: 12px;
+	font-weight: 400px;
+	color: #333333;
+	line-height: 17px;
+}
+
+.footer .rank{
+	font-weight: 500px;
+}
+
+.footer .seeMore{
+	color: #EB7350;
+	margin-left: 72px;
+}
