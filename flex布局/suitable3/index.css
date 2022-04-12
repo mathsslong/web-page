@@ -1,0 +1,20 @@
+.flex-auto {
+  padding: 4px;
+  background: #282A35;
+  height: 100px;
+  display: flex;
+}
+
+.flex-auto .static {
+  width: 100px;
+  background-color: #D5E8D4;
+  flex: none;
+
+}
+
+.flex-auto .flexible {
+  background-color: #FFF2CC;
+  width: 100px;
+  flex: 1;
+
+}

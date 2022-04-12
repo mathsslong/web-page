@@ -1,0 +1,106 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.nav {
+  /* 用fixed使导航固定在头部 */
+  position: fixed;
+  top: 0;
+  /* 设置左右距离为0，可以使导航在长度上和页面宽度相等 */
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+}
+
+a.qq {
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+  cursor: pointer;
+  font-size: 0;
+}
+
+a.qq > img {
+  width: 40px;
+  height: 40px;
+  /* 指定行内元素的垂直对齐方式为居中对齐 */
+  vertical-align: middle;
+}
+
+a.qq > span {
+  /* 指定行内元素的垂直对齐方式为居中对齐 */
+  vertical-align: middle;
+  font-size: 36px;
+  line-height: 43px;
+  margin-left: 6px;
+}
+
+/* ul整体向右浮动，和 a.qq 处于同一行 */
+/* ul内部的li向左浮动，三个 li 处于同一行 */
+ul.right {
+  float: right;
+}
+
+ul.right > li {
+  float: left;
+  margin-top: 20px;
+  margin-right: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  cursor: pointer;
+}
+
+.bright {
+  width: 95px;
+  height: 34px;
+}
+
+.bright > img {
+  width: 100%;
+  height: 100%;
+}
+
+ul.right > li.language {
+  font-size: 0;
+  margin-top: 30px;
+}
+
+ul.right > li.language span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+ul.right > li.language .arrow {
+  vertical-align: middle;
+  width: 12px;
+  height: 8px;
+}
+
+ul.right > li.contact {
+  margin-top: 30px;
+}

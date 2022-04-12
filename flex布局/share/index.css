@@ -1,0 +1,49 @@
+/* 注意，本题无需写样式清除 */
+.container {
+  width: 390px;
+  background-color: #f1f1f1;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  /* 根据设计稿我们知道 .item 的宽度相同，为 48px */
+  width: 48px;
+  height: 65px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 0 25px 25px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 25%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.wx .logo {
+  background: url(./images/wx.png) no-repeat center/ contain;
+}
+
+.wx-circle .logo {
+  background: url(./images/wx-circle.png) no-repeat center/ contain;
+}
+
+.qq .logo {
+  background: url(./images/qq.png) no-repeat center/ contain;
+}
+
+.ding .logo {
+  background: url(./images/ding.png) no-repeat center/ contain;
+}
+
+.wb .logo {
+  background: url(./images/weibo.png) no-repeat center/ contain;
+}
+
+.copy .logo {
+  background: url(./images/link.png) no-repeat center/ contain;
+}

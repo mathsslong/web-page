@@ -1,0 +1,63 @@
+/* 注意，本题无需写样式清除 */
+.card {
+  width: 320px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #979797;
+  background: #f4f4f4;
+}
+.card .title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.card .author {
+	display: flex;
+  margin-bottom: 5px;
+}
+.card .author .avatar {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #d8d8d8;
+  margin-right: 5px;
+  
+  /*微调*/
+  flex: none;
+}
+.card .author .username {
+  font-weight: 500;
+  font-size: 12px;
+  color: #666;
+  margin-right: 5px;
+  
+  /*微调*/
+  white-space: nowrap;
+}
+.card .author .tag {
+  font-size: 12px;
+  color: #999;
+  /* 强制不换行 */
+  white-space: nowrap;
+  /* 隐藏超出部分 */
+  overflow: hidden;
+  /* 用省略号代替剩余内容 */
+  text-overflow: ellipsis;
+
+}
+.card .txt {
+  font-size: 14px;
+  color: #333333;
+  /* 隐藏超出部分 */
+  overflow : hidden;
+  /* 文本超出就用省略号 */
+  text-overflow: ellipsis;
+  /* 把对象作为弹性伸缩盒子模型显示 */
+  display: -webkit-box;
+  /* WebKit内核的浏览器的私有属性，设置文本超出2行就用省略号 */
+  -webkit-line-clamp: 2;
+  /* WebKit内核的浏览器的私有属性，设置或检索伸缩盒对象的子元素的排列方式 */
+  -webkit-box-orient: vertical;
+
+}

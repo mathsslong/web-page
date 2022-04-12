@@ -1,0 +1,58 @@
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* 浏览器都有自己的默认样式，以上内容用于浏览器默认样式的清除 */
+
+.head {
+  width: 200px;
+  color: #ffffff;
+  /* 去除空白折叠 */
+  font-size: 0px;
+}
+
+.head li {
+  /* 让两个li处于同一行 */
+  display: inline-block;
+  font-size: 12px;
+  line-height: 36px;
+  width: 100px;
+  text-align: center;
+}
+
+.head .head-first {
+  background-color: #c60a0a;
+}
+
+.head .head-second {
+  background-color: #464444;
+}
+
+.list {
+  width: 200px;
+  box-sizing: border-box;
+  padding-top: 29px;
+  padding-bottom: 14px;
+  background-color: #413f3f;
+}
+
+.list li {
+  margin-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.list li a {
+  /* 让a成为块状元素才能让宽度占据整条li */
+  display: block;
+  border: 1px solid #cb0c10;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 29px;
+  /* a标签比较特殊，设置它的文本样式需要直接选中它 */
+  color: #ffffff;
+  /* 去除a标签的下划线 */
+  text-decoration: none;
+}

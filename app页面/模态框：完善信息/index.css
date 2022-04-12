@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* line 3, ../sass/tmp.scss */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 9, ../sass/tmp.scss */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/tmp.scss */
+li {
+  list-style: none;
+}
+
+/* line 18, ../sass/tmp.scss */
+h1,
+h2 {
+  margin: 0;
+}
+
+/* line 23, ../sass/tmp.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+/* line 31, ../sass/tmp.scss */
+.page-container > img {
+  width: 100%;
+  min-width: 1000px;
+}
+
+/* line 37, ../sass/tmp.scss */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 49, ../sass/tmp.scss */
+.modal-container .modal-box {
+  width: 384px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 55, ../sass/tmp.scss */
+.modal-container .modal-box .modal-close {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: url(./images/close-icon.png) no-repeat center/contain;
+}
+/* line 63, ../sass/tmp.scss */
+.modal-container .modal-box .modal-body {
+  text-align: center;
+  font-size: 0;
+}
+/* line 66, ../sass/tmp.scss */
+.modal-container .modal-box .modal-body img {
+  width: 200px;
+  height: 200px;
+  margin: 8px auto;
+}
+/* line 71, ../sass/tmp.scss */
+.modal-container .modal-box .modal-body .txt {
+  margin: 0 20px;
+  color: #232323;
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+/* line 78, ../sass/tmp.scss */
+.modal-container .modal-box .modal-body .btn-improve {
+  width: 264px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #0091FF;
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+  display: block;
+}

@@ -1,0 +1,46 @@
+/* 
+  这个题目中有个容易搞错的点，即“居中”的实现：
+  1. 图片的居中
+     图片的居中是通过给div.box设置text-align: center;实现的，这是因为图片是行内元素，这个比较好理解。
+  2. div.introduce的居中
+     div.introduce的居中是通过margin: 0 auto;实现的，因为这是个宽度小于父元素的块状元素，所以要使用margin来让它居中，text-align: center;无法使块状元素本身在父元素里居中。
+  3. 价格的居中
+     价格的居中也是通过给div.box设置text-align: center;实现的，这个具有一定的迷惑性，其实这是因为div.price继承了div.box的text-align属性，从而使里面的价格文本居中了。
+ */
+
+ .box {
+    width: 234px;
+    border: 1px solid #c4c4c4;
+    /* text-align: center; 这一句可以实现图片的居中和价格的居中 */
+    /* 因为图片和div.price元素中的文本内容都是行内内容 */
+    text-align: center;
+    padding: 20px 0px;
+  }
+  
+  img {
+    width: 185px;
+    height: 185px;
+    margin-bottom: 8px;
+  }
+  
+  .introduce {
+    width: 135px;
+    /* 需要给div.introduce设置高度，否则不存在文本超出这个盒子这个情况根本不会发生 */
+    /* 因为盒子的高度在不设置的情况下会随着内容的增加而增加，内容永远不会超出盒子 */
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    /* 给div.introduce设置width为135px后，可以使用margin: 0 auto;使它在div.box元素中左右居中 */
+    margin: 0 auto;
+    /* 重新设置margin-bottom可以覆盖上一句margin简写中的margin-bottom的值 */
+    margin-bottom: 10px;
+    /* 让超出的文本隐藏 */
+    overflow: hidden;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #ff0036;
+    line-height: 18px;
+  }

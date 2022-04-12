@@ -1,0 +1,33 @@
+.box {
+  position: relative;
+  width: 190px;
+  height: 240px;
+  box-sizing: border-box;
+  border: 1px solid #f5f5f5;
+  cursor: pointer;
+}
+
+.java {
+  width: 160px;
+  height: 160px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.select {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #bfbfbf;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}

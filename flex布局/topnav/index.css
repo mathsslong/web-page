@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.nav {
+  width: 232px;
+  background: #ffffff;
+  display: flex;
+  height: 50px;
+  /* 用 justify-content 和 align-items 控制 .item 的水平和垂直方向的排列 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  font-size: 12px;
+  display: flex;
+  /* 用 align-items 控制 .item 内部元素的垂直方向的排列 */
+  align-items: center;
+}
+
+.item img {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
